@@ -25,5 +25,6 @@
 ##### 1) What is Client?
 - MQTT Client : Every device that communicates through network by using MQTT
 - Every device from server to micro controller that executes MQTT libraries can be client
-- Publisher : Which **Sends** messages
+##### 2) Client types
+- Publisher : Which **sends** messages
 - Subscriber : Which **receives** messages
