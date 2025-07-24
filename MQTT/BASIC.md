@@ -26,5 +26,10 @@
 - MQTT Client : Every device that communicates through network by using MQTT
 - Every device from server to micro controller that executes MQTT libraries can be client
 ##### 2) Client types
-- Publisher : Which **sends** messages
-- Subscriber : Which **receives** messages
+- Publisher
+  - Which **sends** messages
+  - Sends messages(=payload) about specific topics to 
+- Subscriber
+  - Which **receives** messages
+  - Checks topics at broker by using polling method
+  - Polling : A way to check periodically
