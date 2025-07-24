@@ -23,7 +23,6 @@
 - Grants authority to clients and certificates
 #### (2) Client
 ##### 1) What is Client?
-기본적으로 네트워크를 통해 MQTT를 사용하여 통신하는 모든 디바이스를 MQTT 클라이언트 디바이스라고 할 수 있습니다.
 - MQTT Client : Every device that communicates through network by using MQTT
 - Every device from server to micro controller that executes MQTT libraries can be client
 - Publisher : Which **Sends** messages
