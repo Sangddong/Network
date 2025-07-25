@@ -23,13 +23,15 @@
 - Grants authority to clients and certificates
 #### (2) Client
 ##### 1) What is Client?
-- MQTT Client : Every device that communicates through network by using MQTT
-- Every device from server to micro controller that executes MQTT libraries can be client
+- MQTT Client : Any device that communicates over a network using the MQTT protocol
+- Includes everything from servers to microcontrollers that run MQTT libraries
 ##### 2) Client types
 - Publisher
-  - Which **sends** messages
-  - Sends messages(=payload) about specific topics to 
+  - A client that sends messages(=payload) related to specific topics
+  - Publishes data to the MQTT broker
 - Subscriber
-  - Which **receives** messages
-  - Checks topics at broker by using polling method
-  - Polling : A way to check periodically
+  - A client that receives messages from the broker
+  - Subscribes to topics and receives messages when they are published
+  - Uses a method similar to polling, where it checks for updates periodically
+> *Polling<br>
+> A technique where the client repeatedly checks the broker for new data at regular intervals
