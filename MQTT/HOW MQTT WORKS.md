@@ -46,10 +46,10 @@
 ### 2. Transmission of Message
 #### (0) Message Bus System
 - MQTT uses a **Message Bus System**
-<img width="912" height="603" alt="image" src="https://github.com/user-attachments/assets/0c7119e2-5012-48c6-b634-267285333869" /><br>
 > 1. The broker creates Message Bus
 > 2. The broker puts messages onto the bus
 > 3. Clients subscribed to specific topics read messages from the bus
+<img width="912" height="603" alt="image" src="https://github.com/user-attachments/assets/0c7119e2-5012-48c6-b634-267285333869" /><br>
 #### (1) Message Flow in MQTT
 > 1. The publisher sends a message to broker
 > 2. The broker checks which clients are subscribed to the corresponding topic
