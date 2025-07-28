@@ -50,3 +50,13 @@
 |Real Time|High|Low|
 |Power Efficiency|Good|Poor|
 |Role of Server|Broker mediates communication|Server responds directly|
+
+### 2. Reasons for Using MQTT at IoT
+#### (1) Lightweight
+- The small size of MQTT protocol makes it suitable for devices with limited memory and processing power, such as sensors
+#### (2) Reliabliity
+- MQTT works well over low-bandwidth networks by transmitting compressed, ligthweight messages
+#### (3) Scalability
+- The publish/subscribe model enables easy horizontal scaling in backend systems
+#### (4) Sequrity
+- MQTT supports TLS encryption and authentication using credentials, which helps ensure communication
