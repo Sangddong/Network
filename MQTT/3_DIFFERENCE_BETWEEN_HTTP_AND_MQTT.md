@@ -1,7 +1,7 @@
 
 ## DIFFERENCE BETWEEN HTTP AND MQTT
 ### 0. Similarities
-#### (0) NEtwork Protocol
+#### (0) Network Protocol
 - Both MQTT and HTTP are network protocol that transmit data through the internet
 #### (1) Application Layer
 - Both protocole **operate at the Application level of the OSI 7-Layer model**
@@ -21,9 +21,9 @@
   - maintains long-lived session
 - HTTP : Stateless
   - each request is independent and does not retain connection state
-#### (2) Size of Message
+#### (2) Message Size
 - MQTT : small and lightweight
-- HTTP : bigger than MQTT
+- HTTP : larger than MQTT
   -  includes complex and verbose headers
 #### (3) Quality of Service
 - MQTT : allows selection of Quality and Service level (QoS 0, 1, 2)
@@ -33,7 +33,7 @@
   - supports fast transmission with low bandwidth
 - HTTP : low
   - each requests requires a handshake and full HTTP overhead
-#### (5) electrical energy efficiency
+#### (5) Power Efficiency
 - MQTT : good
   - Optimized for IoT with limited power
 - HTTP : poor
@@ -41,3 +41,12 @@
 #### (6) Role of Server
 - MQTT : a broker mediates communication between clients
 - HTTP : the server responds directly to client request
+
+|feature|MQTT|HTTP|
+|-|-|-|
+|Connection|Persistent Connection|Stateless|
+|Message Size|Small and lightweight|Larer than MQTT|
+|Quality of Service|Qos 0, 1, 2|No QoS support|
+|Real Time|High|Low|
+|Power Efficiency|Good|Poor|
+|Role of Server|Broker mediates communication|Server responds directly|
