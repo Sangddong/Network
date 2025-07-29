@@ -1,42 +1,40 @@
 # MQTT PRACTICE
 ### 0. Install MQTT Library
-#### (1) Install MQTT
+#### (1) Install the MQTT Library
 <a href="https://www.npmjs.com/package/mqtt">npm mqtt</a>
 ``` terminal
 npm install mqtt --save
 ```
-#### (2) Import MQTT module at the top of the script
+#### (2) Import the MQTT module at the top of your script
 ``` javascript
 const mqtt = require('mqtt');
 ```
 
 ### 1. Methods
-#### (1) `connect`
+#### (1) `connect()`
 ``` javascript
 const url = `${protocol}://${host}:${port}`;
 const client = mqtt.connect(url, options);
 ```
-- Composition of Url 
-  - Protocol: connection method
-  - Host: Broker's address
-  - Port: depends on protocol
+- Url Composition
 
 |composition|description|example|
 |-|-|-|
-|Protocol|`mqtt://`: TCP<br> `mqtts://`: TLS/SSL,<br> `ws://`: WebSocket,<br> `wss://`: WebSocket with secure|`mqtt://`, `mqtts://`, `ws://`, `wss://`|
+|Protocol|Connection type|`mqtt://`, `mqtts://`, `ws://`, `wss://`|
 |Host|Broker's address|`broker.hivem.com`, IP address|
-|Port|`1883`, `8883`, `9001`|Port number|
+|Port|Depends on protocol|`1883`, `8883`, `9001`, `443`|
 
 - Port
 
 |Protocol|Port|description|
 |-|-|-|
-|MQTT (TCP)|`1883`|basic connection|
-|MQTT over TLS|`8883`|connection with secure|
+|MQTT (TCP)|`1883`|basic unencrypted connection|
+|MQTT over TLS|`8883`|encrypted secure connection|
 |MQTT over WebSocket|`9001`|WebSocket connection|
-|MQTT over Secure WebSocket|`443` or `wss://`|TLS + WebSocket|
+|MQTT over Secure WebSocket|`443`|TLS + WebSocket (`wss://`)|
 
-- Options: configs Client Id, authentication, keep-alive by option
+- Options: Used to configure client behavior during connection
+
 ``` javascript
 const options = {
   clientId: 'myClientId',
