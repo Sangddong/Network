@@ -38,11 +38,11 @@ const client = mqtt.connect(url, options);
 ``` javascript
 const options = {
   clientId: 'myClientId',
-  userName: 'myUserName',  // when the broker requests authentication
-  password: 'myPassword',  // when the broker requests authentication
-  clean: true,  // true: new session, false: maintain session
-  keepalive: 60,  // Ping transmission cycle
-  reconnectPeriod: 1000,  // automatic reconnection interval
+  userName: 'myUserName',    // when the broker requests authentication
+  password: 'myPassword',    // when the broker requests authentication
+  clean: true,               // true: new session, false: maintain session
+  keepalive: 60,             // Ping transmission cycle
+  reconnectPeriod: 1000,     // automatic reconnection interval
   connectTimeOut: 30 * 1000  // connection timeout
 };
 ```
