@@ -46,3 +46,6 @@ const options = {
   connectTimeOut: 30 * 1000  // connection timeout
 };
 ```
+#### (2) `subscribe()`
+- The subscribe() method allows the client to listen to a specific topic. 
+- Once subscribed, the client will receive all messages published to that topic.
