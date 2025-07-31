@@ -49,3 +49,12 @@ const options = {
 #### (2) `subscribe()`
 - The subscribe() method allows the client to listen to a specific topic. 
 - Once subscribed, the client will receive all messages published to that topic.
+``` javascript
+client.subscribe('topic/name', { qos: 1 }, (err, granted) => {
+  if (err) {
+    console.error('Subscription error:', err);
+  } else {
+    console.log('Subscribed successfully:', granted);
+  }
+});
+```
