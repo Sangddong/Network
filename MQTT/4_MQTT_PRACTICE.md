@@ -47,7 +47,7 @@ const options = {
 };
 ```
 #### (2) `subscribe()`
-- The subscribe() method allows the client to listen to a specific topic. 
+- The `subscribe()` method allows the client to listen to a specific topic. 
 - Once subscribed, the client will receive all messages published to that topic.
 ``` javascript
 client.subscribe('topic/name', { qos: 1 }, (err, granted) => {
@@ -57,4 +57,24 @@ client.subscribe('topic/name', { qos: 1 }, (err, granted) => {
     console.log('Subscribed successfully:', granted);
   }
 });
+```
+#### (3) `publish()`
+- The `publish()` method sends a message to a specific topic.
+- Any client that is subscribed to that topic will receive the message.
+``` javascript
+client.publish(
+  'home/temperature',
+  JSON.stringify({ value: 23.5 }),
+  {
+    qos: 1,
+    retain: true
+  },
+  (err) => {
+    if (err) {
+      console.error('Publish error:', err);
+    } else {
+      console.log('Message published successfully!');
+    }
+  }
+);
 ```
