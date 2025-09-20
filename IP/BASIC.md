@@ -11,6 +11,7 @@
   - IP패킷의 헤더도 MTU 크기에 포함됨
   - MTU 크기 이하로 분할된 패킷은 수신지 도달 시 재조합됨
 <img width="1147" height="275" alt="image" src="https://github.com/user-attachments/assets/7fba233b-7970-478c-a06b-481787cf03ab" />
+
 2) 주소 지정
 - 송신지 주소
 - 수신지 주소
