@@ -2,6 +2,7 @@
 1. DHCP (Dynamic Host Configuration Protocol)
 - 네트워크에 접속하는 장치(PC, 스마트폰 등)에 IP 주소와 네트워크 설정을 자동으로 할당해주는 프로토콜
 - DHCP로 인해 사용자가 직접 IP를 설정하지 않아도 인터넷 사용 가능
+- 클라이언트의 네트워크 상태를 “임대(Lease)”라는 개념으로 관리
 
 ### 2. DHCP의 핵심 역할
 1. IP 주소 자동 할당
@@ -28,3 +29,11 @@
 (2) Offer : 서버가 사용 가능한 IP 제안함<br>
 (3) Request : 클라이언트가 해당 IP 사용 요청함<br>
 (4) Acknowledge : 서버가 최종 승인함<br>
+
+### 4. Lease 매커니즘과 타이머
+- T1 (Renewal Timer) : 보통 Lease 시간의 50%
+→ 기존 DHCP 서버에 갱신 요청
+- T2 (Rebinding Timer) : 보통 Lease 시간의 87.5%
+ - 응답 없으면 다른 DHCP 서버에 브로드캐스트
+Lease 만료 : IP 사용 불가
+- 위 구조로 대규모 네트워크에서 주소 고갈을 방지
