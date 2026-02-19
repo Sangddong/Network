@@ -23,8 +23,8 @@
 → 효율적인 IP 자원 관리 가능
 
 ### 3. DHCP 동작 과정 (DORA 과정)
-- DHCP는 4단계 절차로 동작
-(1) Discover : 클라이언트가 DHCP 서버를 찾음
-(2) Offer : 서버가 사용 가능한 IP 제안함
-(3) Request : 클라이언트가 해당 IP 사용 요청함
-(4) Acknowledge : 서버가 최종 승인함
+- DHCP는 4단계 절차로 동작 <br>
+(1) Discover : 클라이언트가 DHCP 서버를 찾음<br>
+(2) Offer : 서버가 사용 가능한 IP 제안함<br>
+(3) Request : 클라이언트가 해당 IP 사용 요청함<br>
+(4) Acknowledge : 서버가 최종 승인함<br>
