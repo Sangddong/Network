@@ -38,7 +38,7 @@
 - 세 개의 bit로 구성
 - 첫 번째 비트
   - 항상 0, 사용하지 않음
-- DF bit(Dont't Fragment)
+- DF bit(Don't Fragment)
   - 단편화 수행 불가능 여부 표기
   - 0 : 단편화 가능
   - 1 : 단편화 불가능
