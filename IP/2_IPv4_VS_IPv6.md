@@ -1,13 +1,14 @@
 # IPv4 vs IPv6
 ---
 ### 1. IPv4
-- IPv4는 “IP version 4”의 약자
+- “IP version 4”
 - 일반적으로 “192.168.1.1” 같이 마침표(.)로 구분된 네 개의 10진수로 표현
 - 32비트 주소 체계 → 약 `2^32` ≒ **43억 개** 주소 가능
 - 사용자 및 장치 수 증가로 인해 주소 고갈 우려
 ---
-### 2. IPv6**
-- “IP version 6”. IPv4의 한계를 극복하기 위해 개발 
+### 2. IPv6
+- “IP version 6”
+- IPv4의 한계를 극복하기 위해 개발 
 - 128비트 주소 체계로, 8개의 16비트 부분을 콜론(:)으로 구분하여 표현
 - 약 `2^128`개의 주소 가능 → 사실상 주소 부족 문제 해소
 - 기존 인프라 변경 및 비용 등의 이유로 아직 완전한 대체는 이루어지지 않음
@@ -24,11 +25,11 @@
   - IPv6는 기본 헤더와 더불어 확장 헤더(extension header)라는 추가 헤더를 n개 가질 수 있음
   - 확장 헤더는 기본 헤더와 페이로드 사이에 위치
   - 확장 헤더의 종류
-    - 홉 간 옵션(Hop-by-Hop OPtions)
-    - 수신지 옵션(Destination Options)
-    - 라우팅(Routing)
-    - 단편(Fragment)
-    - ESP (Encapsuling Sercurity Payload), AH(Authentication Header)
+    - 홉 간 옵션 (Hop-by-Hop Options)
+    - 수신지 옵션 (Destination Options)
+    - 라우팅 (Routing)
+    - 단편 (Fragment)
+    - ESP (Encapsuling Sercurity Payload), AH (Authentication Header)
     - ... 
 ---
 ### 5. IPv6의 단편화
